@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Yang Fan’s website and data analysis portfolio</title>
+<title>02Chipotle-Exercises with solutions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,21 +20,55 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-72d5d2b44bfddbcb81d6511eeb186058.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-72d5d2b44bfddbcb81d6511eeb186058.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -52,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -67,19 +101,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Index</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./homework.html"> 
+    <a class="nav-link" href="../../homework.html"> 
 <span class="menu-text">Homework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs.html"> 
+    <a class="nav-link" href="../../labs.html"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -106,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Yang Fan’s website and data analysis portfolio</h1>
+<h1 class="title">02Chipotle-Exercises with solutions</h1>
 </div>
 
 
@@ -123,14 +157,96 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hello-and-thanks-for-visiting" class="level1 content-block">
-<h1>Hello, and thanks for visiting!</h1>
-<p>Welcome to my website and <em>data analysis portfolio</em>.</p>
-<p>Here, I’ll feature my projects for the Fall 2024 Informational technologies in Business class.</p>
-<p>Please use the Menu Bar above to look around.</p>
+<section id="ex1---filtering-and-sorting-data" class="level1">
+<h1>Ex1 - Filtering and Sorting Data</h1>
+<p>This time we are going to pull data directly from the internet. Special thanks to: https://github.com/justmarkham for sharing the dataset and materials.</p>
+<section id="step-1.-import-the-necessary-libraries" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.-import-the-necessary-libraries">Step 1. Import the necessary libraries</h3>
+<div id="456d8756" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
+<section id="step-2.-import-the-dataset-from-this-address." class="level3">
+<h3 class="anchored" data-anchor-id="step-2.-import-the-dataset-from-this-address.">Step 2. Import the dataset from this <a href="https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv">address</a>.</h3>
+</section>
+<section id="step-3.-assign-it-to-a-variable-called-chipo." class="level3">
+<h3 class="anchored" data-anchor-id="step-3.-assign-it-to-a-variable-called-chipo.">Step 3. Assign it to a variable called chipo.</h3>
+<div id="a1f0e8d6" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv'</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>chipo <span class="op">=</span> pd.read_csv(url, sep <span class="op">=</span> <span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-4.-how-many-products-cost-more-than-10.00" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-how-many-products-cost-more-than-10.00">Step 4. How many products cost more than $10.00?</h3>
+<div id="2a777b43" class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>prices <span class="op">=</span> [<span class="bu">float</span>(value[<span class="dv">1</span> : <span class="op">-</span><span class="dv">1</span>]) <span class="cf">for</span> value <span class="kw">in</span> chipo.item_price]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>chipo.item_price <span class="op">=</span> prices</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>chipo_filtered <span class="op">=</span> chipo.drop_duplicates([<span class="st">'item_name'</span>,<span class="st">'quantity'</span>,<span class="st">'choice_description'</span>])</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>chipo_one_prod <span class="op">=</span> chipo_filtered[chipo_filtered.quantity <span class="op">==</span> <span class="dv">1</span>]</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>chipo_one_prod</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="da8cb1ef" class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>chipo.query(<span class="st">'item_price &gt; 10'</span>).item_name.nunique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-5.-what-is-the-price-of-each-item" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.-what-is-the-price-of-each-item">Step 5. What is the price of each item?</h3>
+<section id="print-a-data-frame-with-only-two-columns-item_name-and-item_price" class="level6">
+<h6 class="anchored" data-anchor-id="print-a-data-frame-with-only-two-columns-item_name-and-item_price">print a data frame with only two columns item_name and item_price</h6>
+<div id="d56e21ed" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>chipo_filtered <span class="op">=</span> chipo.drop_duplicates([<span class="st">'item_name'</span>,<span class="st">'quantity'</span>])</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>chipo[(chipo[<span class="st">'item_name'</span>] <span class="op">==</span> <span class="st">'Chicken Bowl'</span>) <span class="op">&amp;</span> (chipo[<span class="st">'quantity'</span>] <span class="op">==</span> <span class="dv">1</span>)]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>chipo_one_prod <span class="op">=</span> chipo_filtered[chipo_filtered.quantity <span class="op">==</span> <span class="dv">1</span>]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>price_per_item <span class="op">=</span> chipo_one_prod[[<span class="st">'item_name'</span>, <span class="st">'item_price'</span>]]</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>price_per_item.sort_values(by <span class="op">=</span> <span class="st">"item_price"</span>, ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="step-6.-sort-by-the-name-of-the-item" class="level3">
+<h3 class="anchored" data-anchor-id="step-6.-sort-by-the-name-of-the-item">Step 6. Sort by the name of the item</h3>
+<div id="be884fbf" class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>chipo.item_name.sort_values()</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># OR</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>chipo.sort_values(by <span class="op">=</span> <span class="st">"item_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-7.-what-was-the-quantity-of-the-most-expensive-item-ordered" class="level3">
+<h3 class="anchored" data-anchor-id="step-7.-what-was-the-quantity-of-the-most-expensive-item-ordered">Step 7. What was the quantity of the most expensive item ordered?</h3>
+<div id="9b19e4b8" class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>chipo.sort_values(by <span class="op">=</span> <span class="st">"item_price"</span>, ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-8.-how-many-times-was-a-veggie-salad-bowl-ordered" class="level3">
+<h3 class="anchored" data-anchor-id="step-8.-how-many-times-was-a-veggie-salad-bowl-ordered">Step 8. How many times was a Veggie Salad Bowl ordered?</h3>
+<div id="69716e6b" class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>chipo_salad <span class="op">=</span> chipo[chipo.item_name <span class="op">==</span> <span class="st">"Veggie Salad Bowl"</span>]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># chipo_salad = chipo.query('item_name == "Veggie Salad Bowl"')</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(chipo_salad)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-9.-how-many-times-did-someone-order-more-than-one-canned-soda" class="level3">
+<h3 class="anchored" data-anchor-id="step-9.-how-many-times-did-someone-order-more-than-one-canned-soda">Step 9. How many times did someone order more than one Canned Soda?</h3>
+<div id="a4cff34a" class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>chipo_drink_steak_bowl <span class="op">=</span> chipo[(chipo.item_name <span class="op">==</span> <span class="st">"Canned Soda"</span>) <span class="op">&amp;</span> (chipo.quantity <span class="op">&gt;</span> <span class="dv">1</span>)]</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># chipo_drink_steak_bowl = chipo.query('item_name == "Canned Soda" &amp; quantity &gt; 1')</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(chipo_drink_steak_bowl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

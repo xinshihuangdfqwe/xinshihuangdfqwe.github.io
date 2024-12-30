@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Yang Fan’s website and data analysis portfolio</title>
+<title>02Euro12-Exercises with solutions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,21 +20,55 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-72d5d2b44bfddbcb81d6511eeb186058.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-72d5d2b44bfddbcb81d6511eeb186058.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -52,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -67,19 +101,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Index</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./homework.html"> 
+    <a class="nav-link" href="../../homework.html"> 
 <span class="menu-text">Homework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs.html"> 
+    <a class="nav-link" href="../../labs.html"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -106,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Yang Fan’s website and data analysis portfolio</h1>
+<h1 class="title">02Euro12-Exercises with solutions</h1>
 </div>
 
 
@@ -123,14 +157,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hello-and-thanks-for-visiting" class="level1 content-block">
-<h1>Hello, and thanks for visiting!</h1>
-<p>Welcome to my website and <em>data analysis portfolio</em>.</p>
-<p>Here, I’ll feature my projects for the Fall 2024 Informational technologies in Business class.</p>
-<p>Please use the Menu Bar above to look around.</p>
+<section id="ex2---filtering-and-sorting-data" class="level1">
+<h1>Ex2 - Filtering and Sorting Data</h1>
+<p>This time we are going to pull data directly from the internet.</p>
+<section id="step-1.-import-the-necessary-libraries" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.-import-the-necessary-libraries">Step 1. Import the necessary libraries</h3>
+<div id="9285a3d6" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
+<section id="step-2.-import-the-dataset-from-this-address." class="level3">
+<h3 class="anchored" data-anchor-id="step-2.-import-the-dataset-from-this-address.">Step 2. Import the dataset from this <a href="https://raw.githubusercontent.com/guipsamora/pandas_exercises/master/02_Filtering_%26_Sorting/Euro12/Euro_2012_stats_TEAM.csv">address</a>.</h3>
+</section>
+<section id="step-3.-assign-it-to-a-variable-called-euro12." class="level3">
+<h3 class="anchored" data-anchor-id="step-3.-assign-it-to-a-variable-called-euro12.">Step 3. Assign it to a variable called euro12.</h3>
+<div id="069c7c48" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>euro12 <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/guipsamora/pandas_exercises/master/02_Filtering_%26_Sorting/Euro12/Euro_2012_stats_TEAM.csv'</span>, sep<span class="op">=</span><span class="st">','</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>euro12</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-4.-select-only-the-goal-column." class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-select-only-the-goal-column.">Step 4. Select only the Goal column.</h3>
+<div id="2b21844c" class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>euro12.Goals</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-5.-how-many-team-participated-in-the-euro2012" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.-how-many-team-participated-in-the-euro2012">Step 5. How many team participated in the Euro2012?</h3>
+<div id="f512d53b" class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>euro12.shape[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-6.-what-is-the-number-of-columns-in-the-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-6.-what-is-the-number-of-columns-in-the-dataset">Step 6. What is the number of columns in the dataset?</h3>
+<div id="d1fce9ab" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>euro12.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-7.-view-only-the-columns-team-yellow-cards-and-red-cards-and-assign-them-to-a-dataframe-called-discipline" class="level3">
+<h3 class="anchored" data-anchor-id="step-7.-view-only-the-columns-team-yellow-cards-and-red-cards-and-assign-them-to-a-dataframe-called-discipline">Step 7. View only the columns Team, Yellow Cards and Red Cards and assign them to a dataframe called discipline</h3>
+<div id="c8504f48" class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>discipline <span class="op">=</span> euro12[[<span class="st">'Team'</span>, <span class="st">'Yellow Cards'</span>, <span class="st">'Red Cards'</span>]]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>discipline</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-8.-sort-the-teams-by-red-cards-then-to-yellow-cards" class="level3">
+<h3 class="anchored" data-anchor-id="step-8.-sort-the-teams-by-red-cards-then-to-yellow-cards">Step 8. Sort the teams by Red Cards, then to Yellow Cards</h3>
+<div id="eb099844" class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>discipline.sort_values([<span class="st">'Red Cards'</span>, <span class="st">'Yellow Cards'</span>], ascending <span class="op">=</span> <span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-9.-calculate-the-mean-yellow-cards-given-per-team" class="level3">
+<h3 class="anchored" data-anchor-id="step-9.-calculate-the-mean-yellow-cards-given-per-team">Step 9. Calculate the mean Yellow Cards given per Team</h3>
+<div id="4eb6fe06" class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">round</span>(discipline[<span class="st">'Yellow Cards'</span>].mean())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-10.-filter-teams-that-scored-more-than-6-goals" class="level3">
+<h3 class="anchored" data-anchor-id="step-10.-filter-teams-that-scored-more-than-6-goals">Step 10. Filter teams that scored more than 6 goals</h3>
+<div id="3860d8f9" class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>euro12[euro12.Goals <span class="op">&gt;</span> <span class="dv">6</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-11.-select-the-teams-that-start-with-g" class="level3">
+<h3 class="anchored" data-anchor-id="step-11.-select-the-teams-that-start-with-g">Step 11. Select the teams that start with G</h3>
+<div id="5e46c6e7" class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>euro12[euro12.Team.<span class="bu">str</span>.startswith(<span class="st">'G'</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-12.-select-the-first-7-columns" class="level3">
+<h3 class="anchored" data-anchor-id="step-12.-select-the-first-7-columns">Step 12. Select the first 7 columns</h3>
+<div id="6f5f7316" class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>euro12.iloc[: , <span class="dv">0</span>:<span class="dv">7</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-13.-select-all-columns-except-the-last-3." class="level3">
+<h3 class="anchored" data-anchor-id="step-13.-select-all-columns-except-the-last-3.">Step 13. Select all columns except the last 3.</h3>
+<div id="e5364221" class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>euro12.iloc[: , :<span class="op">-</span><span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-14.-present-only-the-shooting-accuracy-from-england-italy-and-russia" class="level3">
+<h3 class="anchored" data-anchor-id="step-14.-present-only-the-shooting-accuracy-from-england-italy-and-russia">Step 14. Present only the Shooting Accuracy from England, Italy and Russia</h3>
+<div id="bd3d6574" class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>euro12.loc[euro12.Team.isin([<span class="st">'England'</span>, <span class="st">'Italy'</span>, <span class="st">'Russia'</span>]), [<span class="st">'Team'</span>,<span class="st">'Shooting Accuracy'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
